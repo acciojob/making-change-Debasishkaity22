@@ -9,7 +9,7 @@ const makeChange = (c) => {
 	let Penny=0;
 	let Nickle=0;
 	let Dime=0;
-	while(amount>=QuarterIndollarIndollar){
+	while(amount>=QuarterIndollar){
        Quarter++;
 		amount-=QuarterIndollar;
 	}
@@ -22,7 +22,7 @@ const makeChange = (c) => {
 		amount-=NickleIndollar;
 	}
 	while(amount>= PennyIndollar){
-	Penny++;
+	 Penny++;
 		amount-=PennyIndollar;
 	}
 	let res={
