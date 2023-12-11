@@ -24,6 +24,9 @@ const makeChange = (c) => {
 	while(amount>= PennyIndollar){
 	 Penny++;
 		amount-=PennyIndollar;
+		if(amount>=0.005&&amount<=0.01){
+			amount=0.01;
+		}
 	}
 	let res={
 		q:Quarter,
@@ -33,6 +36,7 @@ const makeChange = (c) => {
 	};
 	return res;
 };
+
 
 // Do not the change the code below
 const c = prompt("Enter c: ");
